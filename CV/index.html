@@ -3,401 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoeVint - Toko Sepatu Vintage & Trendsetter Gen Z Medan</title>
-    <!-- Google Fonts untuk tipografi modern & vintage elegan -->
+    <title>CV - Sartika Revina Pangaribuan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome untuk ikon sosial media & kontak -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Menghubungkan ke file CSS eksternal -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ==========================================
-       HEADER & NAVBAR
-       ========================================== -->
-    <header id="header">
-        <div class="container nav-container">
-            <a href="#hero" class="logo">ShoeVint<span>.</span></a>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#hero" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#tentang-kami" class="nav-link">Tentang Kami</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#koleksi" class="nav-link">Koleksi</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skincare-sepatu" class="nav-link">Care & Clean</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#kontak" class="nav-link">Kontak</a>
-                </li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
+    <div class="download-container">
+        <button onclick="window.print()" class="download-btn">
+            <i class="fas fa-file-pdf"></i> Download sebagai PDF
+        </button>
+    </div>
 
-    <!-- ==========================================
-       HERO SECTION
-       ========================================== -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-tagline">Medan's Ultimate Vintage Vault</span>
-                <h1 class="hero-title">Step Up in Timeless Style.</h1>
-                <p class="hero-description">
-                    Tempat berburu sneakers klasik, boots retro, dan archive shoes paling hits untuk anak muda Gen Z di Kota Medan. Temukan jati dirimu lewat langkah yang ikonik.
-                </p>
-                <div class="hero-btn-group">
-                    <a href="#koleksi" class="btn btn-dark">Eksplor Koleksi</a>
-                    <a href="#tentang-kami" class="btn">Kisah Kami</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="cv-container">
 
-    <!-- ==========================================
-       TENTANG KAMI SECTION
-       ========================================== -->
-    <section class="section" id="tentang-kami">
-        <div class="container">
-            <div class="about-grid">
-                <!-- Grid Gambar dengan layout overlapping retro modern -->
-                <div class="about-images">
-                    <img src="https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=600&q=80" alt="Sepatu Boot Kulit Vintage" class="about-img-main">
-                    <img src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?auto=format&fit=crop&w=400&q=80" alt="Gaya Fashion Anak Muda dengan Sneakers Retro" class="about-img-sub">
-                </div>
-                <!-- Konten Teks -->
-                <div class="about-text">
-                    <span class="section-subtitle">Since 2022 / Medan</span>
-                    <h2 class="section-title">Generasi Baru, Gaya Abadi</h2>
-                    <p class="about-desc">
-                        Berdiri di jantung Kota Medan, <strong>ShoeVint</strong> bukan sekadar toko sepatu biasa. Kami adalah kurator kultur, rumah bagi pencari orisinalitas, dan kiblat fashion vintage bagi anak muda Gen Z Medan yang berani tampil beda.
-                    </p>
-                    <p class="about-desc">
-                        Kami percaya bahwa setiap goresan dan keunikan pada sepatu klasik membawa cerita tersendiri. Dari sneakers basket era 90-an yang langka hingga leather boots klasik yang tangguh, kami menyeleksi setiap produk dengan ketat demi memastikan kualitas dan keaslian terbaik.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <h4>100%<span>+</span></h4>
-                            <p>Kurasi Autentik</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h4>4.8<span>★</span></h4>
-                            <p>Ulasan Google Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       KOLEKSI / PRODUK SECTION
-       ========================================== -->
-    <section class="section products" id="koleksi">
-        <div class="container">
-            <div class="product-header">
-                <div>
-                    <span class="section-subtitle">Koleksi Terkini</span>
-                    <h2 class="section-title">Curated Footwear</h2>
-                </div>
-                <!-- Kategori Filter -->
-                <div class="product-filters">
-                    <button class="filter-btn active" data-filter="all">Semua</button>
-                    <button class="filter-btn" data-filter="retro">Retro</button>
-                    <button class="filter-btn" data-filter="classic">Classic</button>
-                    <button class="filter-btn" data-filter="boots">Leather</button>
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="profile.jpeg" alt="Foto Profil Sartika Revina" class="profile-pic">
+                <div class="profile-name-mobile">
+                    <h1>Sartika Revina Pangaribuan</h1>
+                    <p class="jabatan">Mahasiswa</p>
                 </div>
             </div>
 
-            <!-- Grid Produk -->
-            <div class="product-grid">
-                <!-- Produk 1 -->
-                <div class="product-card" data-category="retro">
-                    <div class="product-img-wrapper">
-                        <span class="product-tag">Rare Item</span>
-                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" alt="Sepatu Sneakers Retro Sneakers" class="product-img">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Sneakers Retro</span>
-                        <h3 class="product-title">Retro-Chic Sneaker '92</h3>
-                        <div class="product-footer">
-                            <span class="product-price">Rp 1.450.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20ShoeVint,%20saya%20tertarik%20dengan%20Retro-Chic%20Sneaker%20'92" target="_blank" class="product-btn">
-                                Order <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+            <section class="fade-in-section">
+                <h3><i class="fas fa-address-card"></i> Kontak</h3>
+                <div class="kontak">
+                    <p><i class="fas fa-envelope"></i><a href="mailto:sartikarevina@gmail.com">sartikarevina@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+628210120871">+62 821-0120-871</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>Medan, Sumatera Utara</p>
+                    <p><i class="fab fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/sartika-revina</a></p>
+                    <p><i class="fab fa-github"></i><a href="#" target="_blank">github.com/sartikarevina</a></p>
                 </div>
+            </section>
 
-                <!-- Produk 2 -->
-                <div class="product-card" data-category="classic">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">Hot Item</span>
-                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=600&q=80" alt="Sepatu Canvas Klasik Hitam" class="product-img">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Canvas Classic</span>
-                        <h3 class="product-title">Old-School High Canvas</h3>
-                        <div class="product-footer">
-                            <span class="product-price">Rp 890.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20ShoeVint,%20saya%20tertarik%20dengan%20Old-School%20High%20Canvas" target="_blank" class="product-btn">
-                                Order <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+            <section class="fade-in-section">
+                <h3><i class="fas fa-tools"></i> Keterampilan</h3>
+                <h4>Technical Analysis</h4>
+                <ul class="keterampilan-list">
+                    <li>Business Analytics</li><li>MySQL</li><li>SPSS</li><li>Cisco Packet Tracer</li>
+                </ul>
+                <h4>Development & Design</h4>
+                <ul class="keterampilan-list">
+                    <li>C#</li><li>Visual Studio</li><li>XAMPP</li><li>Figma (UI/UX)</li>
+                </ul>
+                <h4>Lainnya</h4>
+                <ul class="keterampilan-list">
+                    <li>Media Sosial</li><li>Kerjasama Tim</li>
+                </ul>
+            </section>
+
+            <section class="fade-in-section">
+                <h3><i class="fas fa-language"></i> Bahasa</h3>
+                <div class="bahasa-item">
+                    <span>Bahasa Indonesia</span>
+                    <span class="badge">Native</span>
                 </div>
+            </section>
+        </aside>
 
-                <!-- Produk 3 -->
-                <div class="product-card" data-category="boots">
-                    <div class="product-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=600&q=80" alt="Sepatu Boots Kulit Vintage Coklat" class="product-img">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Leather Boots</span>
-                        <h3 class="product-title">Rustic Amber Leather Boots</h3>
-                        <div class="product-footer">
-                            <span class="product-price">Rp 2.100.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20ShoeVint,%20saya%20tertarik%20dengan%20Rustic%20Amber%20Leather%20Boots" target="_blank" class="product-btn">
-                                Order <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+        <main class="main-content">
+            <header class="header fade-in-section">
+                <div class="header-text">
+                    <h1>Sartika Revina Pangaribuan</h1>
+                    <p class="jabatan">Mahasiswa</p>
                 </div>
+                <div class="header-accent"></div>
+            </header>
 
-                <!-- Produk 4 -->
-                <div class="product-card" data-category="classic">
-                    <div class="product-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Sepatu Suede Loafers Klasik" class="product-img">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Suede Loafers</span>
-                        <h3 class="product-title">Heritage Sand Suede</h3>
-                        <div class="product-footer">
-                            <span class="product-price">Rp 1.250.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20ShoeVint,%20saya%20tertarik%20dengan%20Heritage%20Sand%20Suede" target="_blank" class="product-btn">
-                                Order <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <section class="fade-in-section">
+                <h2><i class="fas fa-user-circle"></i> Profil Profesional</h2>
+                <p>Mahasiswa Universitas Satya Terra Bhinneka dengan fokus pada analisis data bisnis dan pengembangan solusi digital. Memiliki pengalaman dalam mengelola data keuangan, melakukan riset lapangan, serta membangun aplikasi database yang fungsional. Berorientasi pada detail dan mampu mengintegrasikan kebutuhan bisnis ke dalam desain teknologi.</p>
+            </section>
 
-    <!-- ==========================================
-       SEGMEN KHUSUS: SKINCARE & PERAWATAN SEPATU
-       ========================================== -->
-    <section class="section skincare-section" id="skincare-sepatu">
-        <div class="container">
-            <div class="skincare-grid">
-                <!-- Visual Produk Perawatan -->
-                <div class="skincare-image">
-                    <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80" alt="Produk Perawatan Sepatu Premium" class="skincare-image-el">
-                    <div class="skincare-floating-card">
-                        <h4>Eco-Friendly Formula</h4>
-                        <p>Aman untuk semua jenis bahan: Leather, Suede, Canvas, & Nubuck.</p>
-                    </div>
-                </div>
-                <!-- Penjelasan Edukasi Produk -->
-                <div class="skincare-content">
-                    <span class="section-subtitle">Premium Shoe Care</span>
-                    <h3>Rawat Sepatu Kesayanganmu Agar Tetap Abadi</h3>
-                    <p class="skincare-text">
-                        Sepatu vintage membutuhkan perhatian lebih. Oleh karena itu, kami menyediakan lini produk <strong>ShoeVint Premium Cleaner</strong> yang dirancang khusus untuk mempertahankan ketahanan warna dan tekstur sepatu jadul tanpa merusak material aslinya.
-                    </p>
-                    
-                    <div class="skincare-steps">
-                        <!-- Step 1 -->
-                        <div class="step-item">
-                            <div class="step-num">01</div>
-                            <div class="step-info">
-                                <h5>ShoeVint Foam Cleaner</h5>
-                                <p>Cairan pembersih busa instan yang meluruhkan noda membandel tanpa perlu air berlebih.</p>
-                            </div>
-                        </div>
-                        <!-- Step 2 -->
-                        <div class="step-item">
-                            <div class="step-num">02</div>
-                            <div class="step-info">
-                                <h5>Premium Horsehair Brush</h5>
-                                <p>Sikat lembut dari bulu kuda pilihan yang aman dari goresan untuk bahan suede yang sensitif.</p>
-                            </div>
-                        </div>
-                        <!-- Step 3 -->
-                        <div class="step-item">
-                            <div class="step-num">03</div>
-                            <div class="step-info">
-                                <h5>Leather Conditioner & Wax</h5>
-                                <p>Menjaga kelembapan kulit sepatu agar tidak retak, menjamin kilau vintage yang berkelas.</p>
-                            </div>
-                        </div>
-                    </div>
+            <section class="timeline-section fade-in-section">
+                <h2><i class="fas fa-project-diagram"></i> Proyek Akademik & Pengalaman Lapangan</h2>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20ShoeVint,%20saya%20tertarik%20dengan%20paket%20Shoe%20Care" target="_blank" class="btn btn-dark">Dapatkan Paket Shoe Care</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       KONTAK & LOKASI
-       ========================================== -->
-    <section class="section contact" id="kontak">
-        <div class="container">
-            <div class="contact-grid">
-                <!-- Info Kontak & Maps -->
-                <div class="contact-info">
-                    <div>
-                        <span class="section-subtitle">Kunjungi Kami</span>
-                        <h2 class="section-title">Mari Berdiskusi & Bernostalgia</h2>
-                        <p class="about-desc">
-                            Singgahi toko offline kami di Medan untuk menikmati vibes musik piringan hitam sembari memilih langsung sepatu impianmu. Kami siap menyeduh kopi terbaik saat Anda berkunjung.
-                        </p>
-                    </div>
-                    
-                    <div class="contact-details">
-                        <!-- Alamat -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h5>Lokasi Toko</h5>
-                                <p>Jl. Kesawan No. 45, Kesawan, Kec. Medan Barat, Kota Medan, Sumatera Utara 20111</p>
-                            </div>
-                        </div>
-                        <!-- Telepon -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h5>WhatsApp Chat</h5>
-                                <p><a href="tel:+6281234567890">+62 812-3456-7890</a></p>
-                            </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h5>Email Inquiry</h5>
-                                <p><a href="mailto:hello@shoevint.com">hello@shoevint.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Sosial -->
-                    <div>
-                        <div class="social-links">
-                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form Kontak & Embedded Map -->
-                <div>
-                    <!-- Lokasi Peta Medan Kesawan -->
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9904791349887!2d98.6766627!3d3.5898018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131bf4eb7b6f3%3A0x868b4cb6fef55bc8!2sJl.%20Kesawan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-                            class="map-iframe" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                    <h3 class="contact-form-title">Tinggalkan Pesan</h3>
-                    <div id="form-alert" class="custom-alert"></div>
-                    <form class="contact-form" id="contact-form">
-                        <input type="text" placeholder="Nama Lengkap" class="form-control" required id="form-name">
-                        <input type="email" placeholder="Email Anda" class="form-control" required id="form-email">
-                        <div class="form-group-full">
-                            <input type="text" placeholder="Subjek" class="form-control" required id="form-subject">
-                        </div>
-                        <div class="form-group-full">
-                            <textarea placeholder="Pesan Anda untuk ShoeVint..." class="form-control" required id="form-message"></textarea>
-                        </div>
-                        <div class="form-group-full">
-                            <button type="submit" class="btn btn-dark w-full" style="width: 100%;">Kirim Pesan</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       FOOTER
-       ========================================== -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <!-- Brand Info -->
-                <div class="footer-brand">
-                    <h4>ShoeVint<span>.</span></h4>
-                    <p>
-                        Pionir kurasi sepatu vintage pilihan terbaik di Kota Medan. Membawa kembali memori era 70, 80, hingga 90-an langsung ke lemari sepatumu dengan sentuhan estetika Gen Z modern.
-                    </p>
-                </div>
-                <!-- Links Cepat -->
-                <div>
-                    <h4 class="footer-title font-sans">Navigasi</h4>
-                    <ul class="footer-links">
-                        <li><a href="#hero">Beranda</a></li>
-                        <li><a href="#tentang-kami">Tentang Kami</a></li>
-                        <li><a href="#koleksi">Koleksi Produk</a></li>
-                        <li><a href="#skincare-sepatu">Perawatan</a></li>
+                <div class="item">
+                    <h3>Software Developer & UI/UX Designer</h3>
+                    <p class="info"><i class="fas fa-laptop-code"></i> Proyek Perkuliahan &nbsp;·&nbsp; 2024 – 2025</p>
+                    <ul>
+                        <li><strong>Database Mahasiswa:</strong> Membuat dan mengelola aplikasi data mahasiswa menggunakan Visual Studio dan MySQL (XAMPP).</li>
+                        <li><strong>Aplikasi Pemesanan Hampers:</strong> Mendesain UI/UX aplikasi menggunakan Figma dengan pendekatan tampilan yang user-friendly dan intuitif.</li>
+                        <li><strong>Simulasi Jaringan:</strong> Melakukan simulasi sistem jaringan komputer sekolah menggunakan Cisco Packet Tracer.</li>
                     </ul>
                 </div>
-                <!-- Links Bantuan -->
-                <div>
-                    <h4 class="footer-title font-sans">Layanan</h4>
-                    <ul class="footer-links">
-                        <li><a href="#kontak">Kontak Kami</a></li>
-                        <li><a href="#kontak">Lokasi Toko</a></li>
-                        <li><a href="#koleksi">Panduan Ukuran</a></li>
-                        <li><a href="#tentang-kami">Kebijakan Retur</a></li>
+
+                <div class="item">
+                    <h3>Analyst & Researcher</h3>
+                    <p class="info"><i class="fas fa-chart-line"></i> Riset & Survei Lapangan </p>
+                    <ul>
+                        <li><strong>Distributor Material:</strong> Mengelola dan menyusun laporan keuangan sederhana berdasarkan hasil survei lapangan untuk akurasi data operasional.</li>
+                        <li><strong>Institusi Pendidikan:</strong> Mengumpulkan, mencatat, dan merangkum data hasil wawancara sebagai bahan analisis akademik.</li>
+                        <li><strong>Lembaga Keuangan:</strong> Mengolah data wawancara dan berkontribusi langsung membantu kegiatan promosi perusahaan.</li>
                     </ul>
                 </div>
-                <!-- Jam Operasional -->
-                <div class="footer-opening">
-                    <h4 class="footer-title font-sans">Jam Operasional</h4>
-                    <p>Senin - Jumat: <strong>11.00 WIB - 21.00 WIB</strong></p>
-                    <p>Sabtu - Minggu: <strong>10.00 WIB - 22.00 WIB</strong></p>
-                    <p style="color: var(--accent-gold); margin-top: 15px; font-weight: 600;">
-                        Kunjungi toko offline kami untuk diskon khusus komunitas anak muda Medan!
-                    </p>
-                </div>
-            </div>
+            </section>
 
-            <!-- Bagian Hak Cipta -->
-            <div class="footer-bottom">
-                <p>&copy; 2026 ShoeVint Medan. Hak Cipta Dilindungi Undang-Undang.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+            <section class="timeline-section fade-in-section">
+                <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+                
+                <div class="item">
+                    <h3>UNIVERSITAS SATYA TERRA BHINNEKA</h3>
+                    <p class="info"><i class="fas fa-university"></i> Medan &nbsp;·&nbsp; 2024 – Sekarang</p>
                 </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Menghubungkan ke file JavaScript eksternal -->
-    <script src="script.js"></script>
+                <div class="item">
+                    <h3>SMA NEGERI 1 PANCUR BATU</h3>
+                    <p class="info"><i class="fas fa-school"></i> Jurusan IPA &nbsp;·&nbsp; 2021 – 2024</p>
+                </div>
+
+                <div class="item">
+                    <h3>SMP SWASTA PGRI-51 PANCUR BATU</h3>
+                    <p class="info"><i class="fas fa-school"></i> 2018 – 2021</p>
+                </div>
+
+                <div class="item">
+                    <h3>SD SWASTA TUNAS KASIH PANCUR BATU</h3>
+                    <p class="info"><i class="fas fa-school"></i> 2012 – 2018</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
